@@ -18,4 +18,4 @@ images = pipeline(
     num_inference_steps=50,
     generator=generator,
 ).images
-images[0].save("yiyi_test_out.png")
+images[0].save("yiyi_test_out_horse.png")
