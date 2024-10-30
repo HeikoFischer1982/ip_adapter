@@ -10,7 +10,7 @@ image = load_image("https://user-images.githubusercontent.com/24734142/266492875
 
 pipeline.load_ip_adapter("h94/IP-Adapter", subfolder="models", weight_name="ip-adapter_sd15.bin")
 
-generator = torch.Generator(device="cpu").manual_seed(33)
+generator = torch.Generator(device="cpu")
 images = pipeline(
     prompt='riding on a white horse',
     ip_adapter_image=image,
