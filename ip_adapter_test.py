@@ -12,7 +12,7 @@ pipeline.load_ip_adapter("h94/IP-Adapter", subfolder="models", weight_name="ip-a
 
 generator = torch.Generator(device="cpu")
 images = pipeline(
-    prompt='riding on a white horse',
+    prompt='wearing a red dress',
     ip_adapter_image=image,
     negative_prompt="monochrome, lowres, bad anatomy, worst quality, low quality",
     num_inference_steps=50,
