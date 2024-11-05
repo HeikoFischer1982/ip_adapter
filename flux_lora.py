@@ -69,7 +69,7 @@ noise_scheduler = DDPMScheduler.from_pretrained(model_name, subfolder="scheduler
 
 # Load and preprocess dataset
 # Replace 'path_to_your_dataset' with your actual dataset path
-dataset = load_dataset('imagefolder', data_dir='/Users/hfischer/PycharmProjects/ip_adapter/training_set')
+dataset = load_dataset('imagefolder', data_dir='./training_set')
 
 # Preprocessing function
 def preprocess(example):
