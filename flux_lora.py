@@ -175,7 +175,7 @@ pipeline = StableDiffusionPipeline.from_pretrained(
 ).to(device)
 
 # Define the prompt for image generation
-prompt = "A cute squirrel with a white karate suite"
+prompt = "A children's book drawing of a cute squirrel with a white karate suite"
 
 # Generate the image
 with torch.no_grad():
