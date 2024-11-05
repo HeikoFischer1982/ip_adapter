@@ -175,11 +175,12 @@ pipeline = StableDiffusionPipeline.from_pretrained(
 ).to(device)
 
 # Define the prompt for image generation
-prompt = "A beautiful landscape painting of mountains during sunset"
+prompt = "A cute squirrel with a white karate suite"
 
 # Generate the image
 with torch.no_grad():
-    images = pipeline(prompt, num_inference_steps=50, guidance_scale=7.5).images
+    images = pipeline(prompt, num_inference_steps=5, guidance_scale=7.5, height=512,
+        width=512).images
 
 # Save the generated image
 output_image_path = os.path.join(output_dir, "generated_image.png")
